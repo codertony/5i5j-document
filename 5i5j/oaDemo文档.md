@@ -32,7 +32,13 @@ HTML代码
 ## 下拉菜单和自动补全
 [demo>表单>下拉菜单和自动补全][4]
 ### 自动补全输入框
-![enter description here][5]
+![][5]
+
+
+
+
+
+
 
 
   [1]: http://tonyyang.cn/test/oa/main/#demo/form/input
