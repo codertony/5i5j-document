@@ -19,6 +19,15 @@ HTML代码
 ```
 ### 组合输入框
 ![展示效果][3]
+```html?linenums
+ <div class="input-group input-daterange" >
+  	<input class="form-control input-xs"  type="text" placeholder="输入">
+  		<span class="input-group-addon addon-xs">
+                ~
+          </span>
+  	<input class="form-control input-xs"  type="text" placeholder="输入">
+</div>
+```
 
 
   [1]: http://tonyyang.cn/test/oa/main/#demo/form/input
