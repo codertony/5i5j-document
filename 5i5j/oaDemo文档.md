@@ -11,14 +11,14 @@
 参考页 [demo>表单>输入框][1]
 
 ### 普通输入框
-![展示效果][2]
+![][2]
 HTML代码
 
 ``` html?linenums
 <input type="text" class="input-xs" style="" />
 ```
 ### 组合输入框
-![展示效果][3]
+![][3]
 ```html?linenums
  <div class="input-group input-daterange" >
   	<input class="form-control input-xs"  type="text" placeholder="输入">
@@ -33,6 +33,7 @@ HTML代码
 [demo>表单>下拉菜单和自动补全][4]
 ### 自动补全输入框
 ![][5]
+
 
 
 
