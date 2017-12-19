@@ -18,16 +18,15 @@
 
 ## 输入框
 参考页 [demo>表单>输入框][1]
-
 ### 普通输入框
-![][2]
+![][3]
 HTML代码
 
 ``` html?linenums
 <input type="text" class="input-xs" style="" />
 ```
 ### 组合输入框
-![][3]
+![][4]
 ```html?linenums
  <div class="input-group input-daterange" >
   	<input class="form-control input-xs"  type="text" placeholder="输入">
@@ -39,9 +38,9 @@ HTML代码
 ```
 
 ## 下拉菜单和自动补全
-[demo>表单>下拉菜单和自动补全][4]
+[demo>表单>下拉菜单和自动补全][5]
 ### 自动补全输入框
-![][5]
+![][6]
 
 ``` html?linenums
 <input id="auto" class="input-xs" type="text" listWidth="300" mustAuto="false"/>
@@ -61,11 +60,9 @@ HTML代码
 ```
 
 
-
-
   [1]: http://tonyyang.cn/test/oa/main/#demo/form/input
-  [2]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673749252.jpg
-  [3]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673973879.jpg
-  [4]: http://tonyyang.cn/test/oa/main/#demo/form/selectorAuto
-  [5]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513674183449.jpg
-  [6]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513675870220.jpg
+  [2]: www.baidu.com
+  [3]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673749252.jpg
+  [4]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673973879.jpg
+  [5]: http://tonyyang.cn/test/oa/main/#demo/form/selectorAuto
+  [6]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513674183449.jpg
