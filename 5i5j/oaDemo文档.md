@@ -48,7 +48,7 @@ HTML代码
     open:function(event, ui){},//下拉菜单打开
     close:function(event, ui){}//下拉菜单关闭
   });
-  </sciprt>
+  </ sciprt>
 ```
 
 
