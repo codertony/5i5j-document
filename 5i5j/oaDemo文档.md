@@ -34,6 +34,23 @@ HTML代码
 ### 自动补全输入框
 ![][5]
 
+``` html?linenums
+<input id="auto" class="input-xs" type="text" listWidth="300" mustAuto="false"/>
+   //通过设置 mustAuto为"false"或者"true",来设置可否任意填写
+   //如果mustAuto="false"则说明输入框可以任意填写，默认为true
+   //listWidth属性表示下拉列表的宽度。
+
+  <script>
+  $( "#auto" ).autocomplete({
+    source: arrayData,//数组
+    focus:function(event, ui){},//下拉菜单聚焦
+    select:function(event, ui){},//下拉菜单选择
+    open:function(event, ui){},//下拉菜单打开
+    close:function(event, ui){}//下拉菜单关闭
+  });
+  </sciprt>
+```
+
 
 
 
