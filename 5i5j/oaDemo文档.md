@@ -40,6 +40,7 @@ HTML代码
    //如果mustAuto="false"则说明输入框可以任意填写，默认为true
    //listWidth属性表示下拉列表的宽度。
 
+<div></div>
   <script>
   $( "#auto" ).autocomplete({
     source: arrayData,//数组
