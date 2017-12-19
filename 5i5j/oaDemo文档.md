@@ -14,7 +14,6 @@
 # 使用方法
 
 
-
 # 表单
 
 ## 输入框
@@ -61,12 +60,7 @@ HTML代码
 </script>
 ```
 
-
-
-
-
-
-
+![1111][6]
 
 
   [1]: http://tonyyang.cn/test/oa/main/#demo/form/input
@@ -74,3 +68,4 @@ HTML代码
   [3]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673973879.jpg
   [4]: http://tonyyang.cn/test/oa/main/#demo/form/selectorAuto
   [5]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513674183449.jpg
+  [6]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513675870220.jpg
