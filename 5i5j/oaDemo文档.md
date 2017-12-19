@@ -29,7 +29,14 @@ HTML代码
 </div>
 ```
 
+## 下拉菜单和自动补全
+[demo>表单>下拉菜单和自动补全][4]
+### 自动补全输入框
+![enter description here][5]
+
 
   [1]: http://tonyyang.cn/test/oa/main/#demo/form/input
   [2]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673749252.jpg
   [3]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673973879.jpg
+  [4]: http://tonyyang.cn/test/oa/main/#demo/form/selectorAuto
+  [5]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513674183449.jpg
