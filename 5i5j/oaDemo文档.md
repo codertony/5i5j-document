@@ -13,7 +13,6 @@
 
 # 使用方法
 
-
 # 表单
 
 ## 输入框
@@ -61,7 +60,6 @@ HTML代码
 
 
   [1]: http://tonyyang.cn/test/oa/main/#demo/form/input
-  [2]: www.baidu.com
   [3]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673749252.jpg
   [4]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673973879.jpg
   [5]: http://tonyyang.cn/test/oa/main/#demo/form/selectorAuto
