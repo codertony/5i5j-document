@@ -42,13 +42,13 @@ HTML代码
 
 <div></div>
   <script>
-  $( "#auto" ).autocomplete({
-    source: arrayData,//数组
-    focus:function(event, ui){},//下拉菜单聚焦
-    select:function(event, ui){},//下拉菜单选择
-    open:function(event, ui){},//下拉菜单打开
-    close:function(event, ui){}//下拉菜单关闭
-  });
+	  $( "#auto" ).autocomplete({
+		source: arrayData,//数组
+		focus:function(event, ui){},//下拉菜单聚焦
+		select:function(event, ui){},//下拉菜单选择
+		open:function(event, ui){},//下拉菜单打开
+		close:function(event, ui){}//下拉菜单关闭
+	  });
 </script>
 ```
 
