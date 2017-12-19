@@ -17,8 +17,10 @@ HTML代码
 ``` html?linenums
 <input type="text" class="input-xs" style="" />
 ```
-
+### 组合输入框
+![展示效果][3]
 
 
   [1]: http://tonyyang.cn/test/oa/main/#demo/form/input
   [2]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673749252.jpg
+  [3]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673973879.jpg
