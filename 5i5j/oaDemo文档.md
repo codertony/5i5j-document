@@ -35,6 +35,17 @@ HTML代码
   	<input class="form-control input-xs"  type="text" placeholder="输入">
 </div>
 ```
+## 时间选择器 
+### 日期选择器组件
+```html?linenums
+  <div class="input-group" style="" >
+    <input class="form-control 5i5jdate input-xs"  type="text" placeholder="选择时间"/>
+      <span class="input-group-addon addon-xs">
+            <i class="fa fa-calendar bigger-110"></i>
+      </span>
+  </div>
+  
+```
 
 ## 选择框
 [demo>表单>选择框][3]
