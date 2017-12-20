@@ -37,6 +37,7 @@ HTML代码
 ```
 ## 时间选择器 
 ### 日期选择器组件
+![][3]
 ```html?linenums
   <div class="input-group" style="" >
     <input class="form-control 5i5jdate input-xs"  type="text" placeholder="选择时间"/>
@@ -44,13 +45,61 @@ HTML代码
             <i class="fa fa-calendar bigger-110"></i>
       </span>
   </div>
-  
+  <script>
+     $('.5i5jdate').datepicker({
+        todayBtn: "linked",//今天按钮
+        clearBtn: true,//清空按钮
+        language: "zh-CN",//语言
+        autoclose: true,//自动关闭
+        todayHighlight: true,//今天高亮
+        format: "yyyy-mm-dd",//日期格式，可以不写，直接使用默认的
+    })
+  </script>
 ```
-
-## 选择框
-[demo>表单>选择框][3]
-### 行内小型多选框 
+### 日期区域选择器
 ![][4]
+```html?linenums
+ 
+  <div class="input-daterange input-group 5i5jdate" style="">
+    <input type="text" class="form-control input-xs" name="start" placeholder="开始时间">
+      <span class="input-group-addon addon-xs">
+        <i class="fa fa-exchange"></i>
+      </span>
+    <input type="text" class="form-control input-xs" name="end" placeholder="结束时间">
+  </div>
+  <script>
+     $('.5i5jdate').datepicker({
+        todayBtn: "linked",//今天按钮
+        clearBtn: true,//清空按钮
+        language: "zh-CN",//语言
+        autoclose: true,//自动关闭
+        todayHighlight: true,//今天高亮
+        format: "yyyy-mm-dd",//日期格式，可以不写，直接使用默认的
+    })
+  </script>
+```
+### 日期和时间选择器
+![][5]
+```html?linenums
+<input type="text" class="5i5jDateTime input-xs" style="" placeholder="选择日期和时间" />
+  <script>
+     $("#5i5jDateTime").datetimepicker({
+        locale:  'zh-CN',
+        format:'YYYY-MM-DD HH:mm',
+        stepping: 1,
+        toolbarPlacement: 'top',
+        useStrict: true,
+        sideBySide:true,
+        showClose:true,
+        fixPlace:true
+        
+      })
+  </script>
+```
+## 选择框
+[demo>表单>选择框][6]
+### 行内小型多选框 
+![][7]
 ``` html?linenums
 	<div class="checkbox-inline input-xs">
     <label>
@@ -73,7 +122,7 @@ HTML代码
   
 ```
 ### 行内小单选框
-![][5]
+![][8]
 ``` html?linenums
 	<div class="checkbox-inline input-xs">
     <label>
@@ -97,9 +146,9 @@ HTML代码
 ```
 
 ## 下拉菜单和自动补全
-[demo>表单>下拉菜单和自动补全][6]
+[demo>表单>下拉菜单和自动补全][9]
 ### 自动补全输入框
-![][7]
+![][10]
 
 
 ``` html?linenums
@@ -120,7 +169,7 @@ HTML代码
 ```
 
 ### 自动补全+多个标签
-![][8]
+![][11]
 ``` html?linenums
 <div class="input-group blueTags" >
   <input type="text" name="tags" id="form-field-tags" value="mytag1,mytag2" >
@@ -156,7 +205,7 @@ HTML代码
 </script>
 ```
 ### 数组载入下拉菜单
-![][9]
+![][12]
 ``` html?linenums
 <select name="" id="selectReady"<>/select>
 
@@ -189,7 +238,7 @@ HTML代码
 </script>
 ```
 ### 多级联动下拉选择
-![][10]
+![][13]
 ``` html?linenums
   <div id="element_id">
     <select class="province input-xs form-control" data-value="浙江省"></select>
@@ -206,9 +255,9 @@ HTML代码
 </script>
 ```
 ## 文件上传
-[demo>表单>文件上传][11]
+[demo>表单>文件上传][14]
 
-![][12]
+![][15]
 ```html?linenums
 <input id="auto" type="text" class="input-xs"/>
  <script>
@@ -218,20 +267,20 @@ HTML代码
 </script>
 ```
 ## 表单验证
-[demo>表单>表单验证][13]
+[demo>表单>表单验证][16]
 ### 外部有星
-![][14]
+![][17]
 ```html?linenums 
 	<input vRequired="true" type="text" class="form-control input-xs" placeholder="必填项"/>
 	vRequired="true"或者required="outerStar"
 ```
 ### 内部有星
-![][15]
+![][18]
 ```html?linenums 
 <input vRequired="innerStar" type="text" class="form-control input-xs" placeholder="必填项"/>
 ```
 ### 无星
-![][16]
+![][19]
 ```html?linenums 
 <input vRequired="noStar" type="text" class="form-control input-xs" placeholder="必填项"/>
 ```
@@ -319,9 +368,9 @@ HTML代码
 </script>
 ```
 ##  隐藏显示的控制 
-[demo>表单>隐藏显示的控制 ][17]
+[demo>表单>隐藏显示的控制 ][20]
 ### select控制，无js
-![][18]
+![][21]
 ```html?linenums 
  <select id="Ctrl1" showControl="#showArea1" showState="显示" class="form-control input-xs">
   ...
@@ -333,7 +382,7 @@ showControl=控制对象的选择器，
  showState=显示条件，hideState=隐藏条件，这两个条件只能二选一。
 ```
 ### input(checkbox或radio)控制，无js
-![][19]
+![][22]
 ```html?linenums 
 <input type="checkbox" id="Ctrl2" showControl="#showArea2" showState=true />
     控制器
@@ -408,26 +457,25 @@ $("#ctrInput").showControl({//作用对象为包含控制器和被控制区域
 #  页面控件 
 
 
-
-
-
-
   [1]: http://tonyyang.cn/test/oa/main/#demo/form/input
   [2]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513673973879.jpg
-  [3]: http://tonyyang.cn/test/oa/main/#demo/form/checkBox
-  [4]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513735288195.jpg
-  [5]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513735345416.jpg
-  [6]: http://tonyyang.cn/test/oa/main/#demo/form/selectorAuto
-  [7]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513674183449.jpg
-  [8]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513735492671.jpg
-  [9]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513735556846.jpg
-  [10]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513735772850.jpg
-  [11]: http://tonyyang.cn/test/oa/main/#demo/form/upload
-  [12]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513736537624.jpg
-  [13]: http://tonyyang.cn/test/oa/main/#demo/form/validate
-  [14]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513739525840.jpg
-  [15]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513739674143.jpg
-  [16]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513739837563.jpg
-  [17]: http://tonyyang.cn/test/oa/main/#demo/form/showControl
-  [18]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513754002014.jpg
-  [19]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513754023445.jpg
+  [3]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513769477215.jpg
+  [4]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513769512077.jpg
+  [5]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513769911930.jpg
+  [6]: http://tonyyang.cn/test/oa/main/#demo/form/checkBox
+  [7]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513735288195.jpg
+  [8]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513735345416.jpg
+  [9]: http://tonyyang.cn/test/oa/main/#demo/form/selectorAuto
+  [10]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513674183449.jpg
+  [11]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513735492671.jpg
+  [12]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513735556846.jpg
+  [13]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513735772850.jpg
+  [14]: http://tonyyang.cn/test/oa/main/#demo/form/upload
+  [15]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513736537624.jpg
+  [16]: http://tonyyang.cn/test/oa/main/#demo/form/validate
+  [17]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513739525840.jpg
+  [18]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513739674143.jpg
+  [19]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513739837563.jpg
+  [20]: http://tonyyang.cn/test/oa/main/#demo/form/showControl
+  [21]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513754002014.jpg
+  [22]: https://www.github.com/codertony/5i5j-document/raw/master/images/1513754023445.jpg
